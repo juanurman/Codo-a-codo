@@ -8,15 +8,15 @@ body, h1, h2, h3, p, ul, li, a {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #FFF;
+    color: #30343F;
     line-height: 1.6;
 }
 
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #30343F;
+    color: #FFF;
     padding: 10px;
 }
 
@@ -36,12 +36,12 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #FFF;
 }
 
 
 article {
-    background-color: #fff;
+    background-color: #FFF;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -49,22 +49,13 @@ article {
 }
 
 article h3 {
-    color: #333;
+    color: #30343F;
 }
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #30343F;
+    color: #FFFFFF;
     text-align: center;
     padding: 10px;
-}
-
-
-a {
-    color: #007BFF;
-}
-
-a:hover {
-    text-decoration: underline;
 }
