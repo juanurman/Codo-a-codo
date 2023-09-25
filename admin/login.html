@@ -9,23 +9,55 @@
 </head>
 
 <body>
-    <header> <!-- INCIO HEADER -->
+    <!-- INICIO HEADER -->
+    <header>
         <nav class="navbar container">
             <picture class="navbar__logo">
-                <a href="./index.html">
-                    <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo Funko Pop">
+                <a href="../index.html">
+                            
+                     <img src="../MULTIMEDIA/branding/logo_light_horizontal.svg" alt="Logotipo Marca Funko" />
+
                 </a>
             </picture>
+          
+            <ul  class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a  class="navbar__link with-icon" href="./Shop/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                            <li class="submenu__item">
+                               <a href="" class="submenu__link">Funkos</a> 
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Llaveros</a>
+                            </li>
 
-            <ul>
-                <li><a href="./Shop.html">VER TIENDA</a></li>
+                    </ul>
 
-                <li><a href="./Admin.html">ADMIN</a></li>
 
-                <li><a href="./Index.html">SALIR</a></li>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__link"href="./pages/contacto.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__link"href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__cart"href="./pages/cart.html">
+                        
+                        <img src="../MULTIMEDIA/icons/cart-icon.svg" alt="">
+
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
-    </header> <!-- FIN HEADER -->
+
+    </header>
+    <!-- FIN HEADER -->
 
     <main>
         <h2>INGRESAR A MI CUENTA</h2>
@@ -59,27 +91,31 @@
         <a href="">Olvidé mi contraseña</a>
     </main>
 
-    <footer><!-- INICIO FOOTER-->
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="./Shop.html">SHOP</a></li>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar_item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/registro.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        <picture>
+           <img  src="../MULTIMEDIA/branding/isotype.svg" alt="isotipo">
+        </picture>
+        </nav>
 
-                    <li><a href="./Register.html">REGISTRARSE</a></li>
 
-                    <li><a href="./Login.html">INGRESAR</a></li>
-
-                    <li><a href="./Contacto.html">CONTACTO</a></li>
-                </ul>
-
-                <picture>
-                    <img src="../multimedia/branding/isotype.svg" alt="Isotipo Funkoshop">
-                </picture>
-            </nav>
-        </section>
-
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer><!--FIN FOOTER-->
+       <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
+       <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</footer>
 
 </body>
 
