@@ -1,0 +1,29 @@
+.edit_images {
+  display: flex;
+  gap: var(--spacing-24);
+}
+
+.edit_image {
+  width: 150px;
+  height: 150px;
+}
+
+.edit_image-title {
+  border: none;
+  border-top: 1px solid var(--primary-solid);
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--font-medium);
+}
+
+.edit_button {
+  width: 175px;
+  height: 45px;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  padding: var(--spacing-16);
+  border: none;
+  font-size: var(--font-xsmall);
+  font-weight: 600;
+  line-height: var(--spacing-16);
+}
