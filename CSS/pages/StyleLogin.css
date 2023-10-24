@@ -12,7 +12,7 @@
     font-size: var(--font-jumbo);
 }
 
-.login__form {
+#login__form {
     margin: auto;
     display: flex;
     flex-direction: column;
