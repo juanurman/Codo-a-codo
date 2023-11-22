@@ -1,0 +1,68 @@
+.search {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--spacing-12);
+    height: 45px;
+    margin: var(--spacing-20) 0;
+}
+
+.search_image {
+    max-width: 45px;
+}
+
+.search_input {
+    width: 530px;
+    padding: var(--spacing-12);
+}
+
+.products_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products_header-title {
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.products_header-add {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.products_header-text {
+    color: var(--dark-solid);
+    /* text-align: center;
+    vertical-align: middle; */
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tableProducts {
+    width: 1440px;
+    display: grid;
+    /* grid-template-columns: repeat(5, max-content); */
+    /* grid-gap: 20px 10px; */
+    grid-template-columns: 5% 20% 1fr 20% 5%;
+
+}
+
+.tableProducts_title {
+    color: var(--dark-solid);
+    text-align: right;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* BORRAR FONDO GRIS DE LOS ICONOS MULTIMEDIA */
+.edition {
+    background-color: var(--light-font-solid);
+}

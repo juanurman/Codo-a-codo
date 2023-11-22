@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADMIN</title>
-    <link rel="stylesheet" href="../../CSS/Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN</title>
+  <link rel="stylesheet" href="../../CSS/Style.css">
 </head>
 <body>
-    <main> 
-        <h1>ADMIN</h1>
-    </main>
-    <!-- SCRIPTS DEL HEADER Y FOOTER-->
-    <script src="/js/header.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <main class="container">
+    <div class="search">
+        <a href=""><img class="search_image" src="../../MULTIMEDIA/icons/search_icon.svg" alt="Boton de búsqueda"></a>
+        <input class="search_input" type="text" placeholder="código, nombre o categoria" name="search">
+    </div>
+    <div class="products">
+      <!-- TITULO CON DOS PARTES -->
+      <div class="products_header">
+        <p class="products_header-title">LISTADO DE PRODUCTOS</p>
+        <div class="products_header-add">
+          <p class="products_header-text">AGREGAR</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24"><path fill="#FF3333" d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
+        </div>
+      </div>
+        <table class="tableProducts">
+          <!-- SUBTITULOS CON CINCO PARTES -->
+          <!-- <thead> -->
+            <tr class="tableProducts_title">
+                  <th>ID</th>
+                  <th>Código</th>
+                  <th>Nombre del Producto</th>
+                  <th>Categoria</th>
+                  <th colspan="2"></th>
+                </tr>
+              <!-- </thead> -->
+              <!-- <tbody> -->
+                <!-- LO QUE TIENE QUE REPETIRSE COMO DATOS -->
+                <tr class="items-list-item">
+                  <td class="item-id">1</td>
+                  <td class="item-code">STW001001</td>
+                  <td class="item-product">Baby Yoda Blueball</td>
+                  <td class="item-category">STAR WARS
+                  </td>
+                  <td><button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button></td>
+                  <td><button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button></td>
+                </tr> 
+                <!-- ************************************* -->
+              <!-- </tbody> -->
+            </table>
+            <div>
+    
+              
+            </div>
+          </div>
+    
+        </main>
+        <br><br><br>
+        <!-- SCRIPTS DEL HEADER Y FOOTER-->
+        <script src="/js/header.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="/js/glide.js"></script>
    
 </body>
