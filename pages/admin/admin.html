@@ -8,11 +8,12 @@
 </head>
 <body>
   <main class="container">
-    <div class="search">
+    <section class="search">
         <a href=""><img class="search_image" src="../../MULTIMEDIA/icons/search_icon.svg" alt="Boton de búsqueda"></a>
         <input class="search_input" type="text" placeholder="código, nombre o categoria" name="search">
-    </div>
-    <div class="products">
+    </section>
+
+    <section class="products">
       <!-- TITULO CON DOS PARTES -->
       <div class="products_header">
         <p class="products_header-title">LISTADO DE PRODUCTOS</p>
@@ -21,40 +22,194 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24"><path fill="#FF3333" d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m2-8H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
         </div>
       </div>
-        <table class="tableProducts">
+
+      <table class="tableProducts">
           <!-- SUBTITULOS CON CINCO PARTES -->
-          <!-- <thead> -->
-            <tr class="tableProducts_title">
-                  <th>ID</th>
-                  <th>Código</th>
-                  <th>Nombre del Producto</th>
-                  <th>Categoria</th>
-                  <th colspan="2"></th>
-                </tr>
-              <!-- </thead> -->
-              <!-- <tbody> -->
-                <!-- LO QUE TIENE QUE REPETIRSE COMO DATOS -->
-                <tr class="items-list-item">
-                  <td class="item-id">1</td>
-                  <td class="item-code">STW001001</td>
-                  <td class="item-product">Baby Yoda Blueball</td>
-                  <td class="item-category">STAR WARS
-                  </td>
-                  <td><button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button></td>
-                  <td><button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button></td>
-                </tr> 
+        <thead class="tableProducts_titles">
+          <tr>
+            <th class="tableProducts_title">ID</th>
+            <th class="tableProducts_title">Código</th>
+            <th class="tableProducts_title">Nombre del Producto</th>
+            <th class="tableProducts_title">Categoria</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="tableProducts-items">
+          <!-- LO QUE TIENE QUE REPETIRSE COMO DATOS -->
+          <tr>
+            <td class="tableProducts-item item-id">1</td>
+            <td class="tableProducts-item item-code">STW001001</td>
+            <td class="tableProducts-item item-product">Baby Yoda Blueball</td>
+            <td class="tableProducts-item item-category">STAR WARS</td>
+            <td class="tableProducts-item item-buttons">
+              <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+              <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+            </td> 
+          </tr>
                 <!-- ************************************* -->
-              <!-- </tbody> -->
-            </table>
-            <div>
-    
-              
-            </div>
-          </div>
-    
-        </main>
+
+                <tr>
+                  <td class="tableProducts-item item-id">2</td>
+                  <td class="tableProducts-item item-code">STW001002</td>
+                  <td class="tableProducts-item item-product">Boba Fett Fighter</td>
+                  <td class="tableProducts-item item-category">STAR WARS</td>
+                  <td class="tableProducts-item item-buttons">
+                    <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+                    <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+                  </td> 
+                </tr>
+
+                <tr>
+                  <td class="tableProducts-item item-id">3</td>
+                  <td class="tableProducts-item item-code">STW001003</td>
+                  <td class="tableProducts-item item-product">Luke Skylwalker & Grogu</td>
+                  <td class="tableProducts-item item-category">STAR WARS</td>
+                  <td class="tableProducts-item item-buttons">
+                    <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+                    <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+                  </td> 
+                </tr>
+
+                <tr>
+                  <td class="tableProducts-item item-id">4</td>
+                  <td class="tableProducts-item item-code">STW001004</td>
+                  <td class="tableProducts-item item-product">Stormtrooper Lightsaber</td>
+                  <td class="tableProducts-item item-category">STAR WARS</td>
+                  <td class="tableProducts-item item-buttons">
+                    <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+                    <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+                  </td> 
+                </tr>
+
+                <tr>
+                  <td class="tableProducts-item item-id">5</td>
+                  <td class="tableProducts-item item-code">PKM001001</td>
+                  <td class="tableProducts-item item-product">Charmander Smiley</td>
+                  <td class="tableProducts-item item-category">POKEMON</td>
+                  <td class="tableProducts-item item-buttons">
+                    <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+                    <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+                  </td> 
+                </tr>
+
+                <tr>
+                  <td class="tableProducts-item item-id">6</td>
+                  <td class="tableProducts-item item-code">PKM001002</td>
+                  <td class="tableProducts-item item-product">Dragonite Hi!</td>
+                  <td class="tableProducts-item item-category">POKEMON</td>
+                  <td class="tableProducts-item item-buttons">
+                    <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+                    <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+                  </td> 
+                </tr>
+        </tbody>
+           
+        <tr>
+          <td class="tableProducts-item item-id">7</td>
+          <td class="tableProducts-item item-code">PKM001003</td>
+          <td class="tableProducts-item item-product">Pidgeotto Flying</td>
+          <td class="tableProducts-item item-category">POKEMON</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+
+        <tr>
+          <td class="tableProducts-item item-id">8</td>
+          <td class="tableProducts-item item-code">PKM001004</td>
+          <td class="tableProducts-item item-product">Pikachu Smiley</td>
+          <td class="tableProducts-item item-category">POKEMON</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+
+        <tr>
+          <td class="tableProducts-item item-id">9</td>
+          <td class="tableProducts-item item-code">PKM001005</td>
+          <td class="tableProducts-item item-product">Vulpix Fancy</td>
+          <td class="tableProducts-item item-category">POKEMON</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+
+        <tr>
+          <td class="tableProducts-item item-id">10</td>
+          <td class="tableProducts-item item-code">HPT001001</td>
+          <td class="tableProducts-item item-product">Harry Potter & Hegwid</td>
+          <td class="tableProducts-item item-category">HARRY POTTER</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+
+        <tr>
+          <td class="tableProducts-item item-id">11</td>
+          <td class="tableProducts-item item-code">HPT001002</td>
+          <td class="tableProducts-item item-product">Herminione Ball Dress</td>
+          <td class="tableProducts-item item-category">HARRY POTTER</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+
+        <tr>
+          <td class="tableProducts-item item-id">12</td>
+          <td class="tableProducts-item item-code">HPT001003</td>
+          <td class="tableProducts-item item-product">Luna Lovegood Lion Mask</td>
+          <td class="tableProducts-item item-category">HARRY POTTER</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+
+        <tr>
+          <td class="tableProducts-item item-id">13</td>
+          <td class="tableProducts-item item-code">HPT001004</td>
+          <td class="tableProducts-item item-product">Snape Patronus</td>
+          <td class="tableProducts-item item-category">HARRY POTTER</td>
+          <td class="tableProducts-item item-buttons">
+            <button class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/edit_pencil.svg" alt="Editar item"></button>
+            <button  class="btn edition" type="button"><img src="../../MULTIMEDIA/icons/delete_trash.svg" alt="Borrar item"></button>
+          </td> 
+        </tr>
+    </table>
+    </section>
+
+  </main>
         <br><br><br>
-        <!-- SCRIPTS DEL HEADER Y FOOTER-->
+        <footer class="footer">
+          <nav class="navbar container">
+            <ul class="navbar_item">
+              <li class="navbar__item">
+                <a class="navbar__link" href=".././Shop/shop.html">SHOP</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="./login.html">LOGIN</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href=".././pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <picture>
+              <img src="../../MULTIMEDIA/branding/isotype.svg" alt="isotipo">
+            </picture>
+          </nav>
+      
+      
+          <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
+        </footer>
+
         <script src="/js/header.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
