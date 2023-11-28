@@ -74,48 +74,34 @@
             </select>
         </div>
     
-        <div>
-            <h3>PRECIO</h3>
-    
-            <label for="preciomin">Min</label>
-            <input type="number" name="" id="preciomin" placeholder="0">
-    
-            <label for="preciomax">- Max</label>
-            <input type="number" name="" id="preciomax" placeholder="0">
-    
-            <input type="submit" value="->">
+        <div class="filtros__precio">
+            <span class="filtros__titulo" >PRECIO</span>
+            <div>
+                <label for="min">MIN</label>
+                <input type="text" name="min" id="min" placeholder="0">
+                <label for="max">- MAX</label>
+                <input type="text" name="max" id="max" placeholder="0">
+            </div>
         </div>
     
-        <div>
-            <h3>FILTRAR</h3>
-            
+        <div class="filtros__checks">
+            <span class="filtros__title" for="filter">FILTRAR</span>
             <div>
-            <input type="checkbox" name="" id="NUEVOS">
-            <label for="NUEVOS">NUEVOS</label>
+                <input type="checkbox" name="filter" id="news" value="news">
+                <label for="">NUEVOS</label>
             </div>
-    
-            <br>
-    
             <div>
-            <input type="checkbox" name="" id="OFERTAS">
-            <label for="OFERTAS">OFERTAS</label>
+                <input type="checkbox" name="filter" id="offers" value="offers">
+                <label for="">OFERTAS</label>
             </div>
-    
-            <br>
-    
             <div>
-            <input type="checkbox" name="" id="EDESP">
-            <label for="EDESP">EDICIÓN ESPECIAL</label>
+                <input type="checkbox" name="filter" id="specials" value="specials">
+                <label for="">EDICIÓN ESPECIAL</label>
             </div>
-    
-            <br>
-    
             <div>
-            <input type="checkbox" name="" id="FAVORITOS">
-            <label for="FAVORITOS">FAVORITOS</label>
+                <input type="checkbox" name="filter" id="favs" value="favs">
+                <label for="">FAVORITOS</label>
             </div>
-            <br>
-    
         </div>
     </aside> <!--FIN ASIDE--> 
 
