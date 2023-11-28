@@ -1,60 +1,126 @@
-body, h1, h2, h3, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FFF;
-    color: #30343F;
-    line-height: 1.6;
-}
-
-
-header {
-    background-color: #30343F;
-    color: #FFF;
-    padding: 10px;
-}
-
-nav {
+#shop {
     display: flex;
+    gap: var(--spacing-28);
+    font-family: var(--base-font);
+    margin: var(--spacing-68) auto;
+}
+
+.filtros__shop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-28);
+}
+
+.filters__title {
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+.filtros__buscar,
+.filtros__orden {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+}
+
+.filtros__buscar input,
+.filtros__orden select {
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
+}
+
+.filtros__precio div {
+    margin-top: var(--spacing-12);
+    display: flex;
+    align-items: baseline;
     justify-content: space-between;
-    align-items: center;
 }
 
-nav ul {
-    list-style: none;
+.filtros__precio label {
+    font-size: var(--font-small);
+    font-weight: 500;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #FFF;
-}
-
-
-article {
-    background-color: #FFF;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-article h3 {
-    color: #30343F;
-}
-
-
-footer {
-    background-color: #30343F;
-    color: #FFFFFF;
+.filtros__precio input {
+    width: 70px;
     text-align: center;
-    padding: 10px;
+    border-radius: 6px;
+    font-size: var(--font-medium);
+    border: 2px solid var(--dark-solid);
+    padding: 4px var(--spacing-8);
+}
+
+.filtros__checks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.filtros__checks span {
+    margin-bottom: var(--spacing-12);
+}
+
+.filtros__checks div {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    font-weight: 500;
+    font-size: var(--font-medium);
+}
+
+.filtros__checks div input {
+    accent-color: var(--primary-solid);
+    width: 16px;
+    height: 16px;
+}
+
+.shop__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--spacing-36);
+}
+
+.shop__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-28);
+}
+
+.shop__item {
+    flex: 1 1 clamp(250px, 30%, 30%);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-12);
+}
+
+.pagination .pagination__link {
+    display: block;
+    font-size: var(--font-medium);
+    font-weight: 700;
+    border-radius: 4px;
+    padding: var(--spacing-12) var(--spacing-16);
+    border: 2px solid var(--dark-300);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pagination .pagination__link:first-of-type,
+.pagination .pagination__link:last-of-type {
+    color: var(--dark-500);
+}
+
+.pagination .pagination__link:hover {
+    background-color: var(--primary-900);
+    color: var(--light-bg-solid);
+    border-color: var(--primary-500);
+}
+
+.pagination .pagination__link--selected {
+    border-color: var(--primary-solid);
+    color: var(--primary-solid);
 }

@@ -56,28 +56,22 @@
 </header>
 <!-- FIN HEADER -->
 
-<main class="container">
+<main id="shop" class="container">
 
-    <aside class="aside"> <!--INICIO ASIDE-->
-        <div>
-            <h3>BUSCAR</h3>
-            <input type="text" placeholder="item o categoria">
+    <aside class="filtros__shop filtros"> <!--INICIO ASIDE-->
+        <div class="filtros__buscar">
+            <label  class="filtros__title" for="buscar">BUSCAR</label>
+            <input type="text" name="buscar" id="buscar" placeholder="item o categoría">
         </div>
     
-        <div>
-            <h3>ORDENAR POR</h3>
-            <form action="">
-                <select name="Ordenar" id="" >
-                    <option value="Destacados">Destacados</option>
-                    <option value="Precioasc">Precio de mayor a menor</option>
-                    <option value="Preciodes">Precio de menor a mayor</option>
-                    <option value="alfabeticamentea-z">Alfabeticamente a-z</option>
-                    <option value="alfabeticamentez-a">Alfabeticamente z-a</option>
-                    <option value="masvendidos">Mas vendidos</option>
-                    <option value="menosvendidos">Menos vendidos</option>
-                    <option value="Mas nuevos">Recientes</option>
-                </select>
-            </form>
+        <div class="filtros__orden">
+            <label  class="filtros__titulo" for="orderby">ORDERNAR POR</label>
+            <select name="orderby" id="orderby">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="desc">Mayor precio</option>
+                <option value="asc">Menor precio</option>
+            </select>
         </div>
     
         <div>
