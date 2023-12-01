@@ -1,4 +1,4 @@
-#shop {
+.shop {
     display: flex;
     gap: var(--spacing-28);
     font-family: var(--base-font);
